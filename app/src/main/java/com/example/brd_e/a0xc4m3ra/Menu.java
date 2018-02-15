@@ -22,10 +22,19 @@ public class Menu extends AppCompatActivity {
 
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent i=new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
+                Intent i=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivity(i);
             }
         });
+
+        Button btn1 = findViewById(R.id.test);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, BackgroundTest.class));
+            }
+        });
     }
-    
+
 }

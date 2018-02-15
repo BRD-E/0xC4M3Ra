@@ -21,4 +21,12 @@
             android:layout_marginTop="54dp"
             android:text="Button" />
     </RelativeLayout>
-</android.support.constraint.ConstraintLayout>  
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Background test"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="148dp" />
+</android.support.constraint.ConstraintLayout>
