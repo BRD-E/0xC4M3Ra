@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.brd_e.a0xc4m3ra">
 
-    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature
         android:name="android.hardware.camera2.full"
@@ -29,7 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BackgroundTest"></activity>
+        <activity android:name=".BackgroundTest" />
+        <activity android:name=".Lumen" />
+        <activity android:name=".Random"></activity>
     </application>
 
 </manifest>

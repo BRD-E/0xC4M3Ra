@@ -10,23 +10,34 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="46dp">
+
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/lumin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="81dp"
             android:layout_marginTop="54dp"
-            android:text="Button" />
+            android:text="Luminosity?" />
     </RelativeLayout>
 
     <Button
         android:id="@+id/test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Background test"
+        android:text="Array.sort(RGB?)"
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="148dp" />
+
+    <Button
+        android:id="@+id/random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="2dp" />
 </android.support.constraint.ConstraintLayout>

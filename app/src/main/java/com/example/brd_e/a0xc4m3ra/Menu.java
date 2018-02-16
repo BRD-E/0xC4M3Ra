@@ -17,15 +17,6 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        Button btn=findViewById(R.id.button1);
-        btn.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent i=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivity(i);
-            }
-        });
 
         Button btn1 = findViewById(R.id.test);
 
@@ -33,6 +24,22 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Menu.this, BackgroundTest.class));
+            }
+        });
+        Button btn2 = findViewById(R.id.lumin);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, Lumen.class));
+            }
+        });
+        Button btn3 = findViewById(R.id.random);
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, Random.class));
             }
         });
     }
