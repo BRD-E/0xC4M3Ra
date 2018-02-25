@@ -37,7 +37,9 @@
         <activity android:name=".BackgroundTest" />
         <activity android:name=".Lumen" />
         <activity android:name=".Rando" />
-        <activity android:name=".NthPixel"></activity>
+        <activity android:name=".NthPixel" />
+        <activity android:name=".Generate" />
+        <activity android:name=".RGB"></activity>
     </application>
 
 </manifest>

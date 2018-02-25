@@ -46,6 +46,23 @@ public class Menu extends AppCompatActivity {
                 startActivity(new Intent(Menu.this, NthPixel.class));
             }
         });
+        Button btn5 = findViewById(R.id.generate);
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, Generate.class));
+            }
+        });
+
+        Button btn6 = findViewById(R.id.rgb);
+
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, RGB.class));
+            }
+        });
     }
 
 }

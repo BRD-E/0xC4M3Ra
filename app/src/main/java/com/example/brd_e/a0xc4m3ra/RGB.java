@@ -14,14 +14,14 @@ import android.widget.ImageView;
 
 import java.util.Arrays;
 
-public class Lumen extends AppCompatActivity {
+public class RGB extends AppCompatActivity {
     private static final int CAMERA_REQUEST = 1888;
     private ImageView imageView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lumen);
+        setContentView(R.layout.activity_rgb);
         this.imageView = this.findViewById(R.id.imageView1);
         Button photoButton = this.findViewById(R.id.button1);
         photoButton.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +54,7 @@ public class Lumen extends AppCompatActivity {
                     r = Color.red(color);
                     g = Color.green(color);
                     b = Color.blue(color);
-                    pixels1[x*height+y] = (int) Math.sqrt(0.299 * r*r + 0.587 * g*g + 0.114 * b*b);
+                    pixels1[x*height+y] = r *100 + b* 10 + g;
                     pixels2[x*height+y] = color;
 
                 }
