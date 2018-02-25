@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.brd_e.a0xc4m3ra">
-    <uses-sdk android:minSdkVersion="24"/>
+
+    <uses-sdk android:minSdkVersion="24" />
 
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -15,6 +16,9 @@
     <uses-feature
         android:name="android.hardware.location.gps"
         android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -32,7 +36,8 @@
         </activity>
         <activity android:name=".BackgroundTest" />
         <activity android:name=".Lumen" />
-        <activity android:name=".Rando"></activity>
+        <activity android:name=".Rando" />
+        <activity android:name=".NthPixel"></activity>
     </application>
 
 </manifest>
