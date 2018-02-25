@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.brd_e.a0xc4m3ra">
+    <uses-sdk android:minSdkVersion="24"/>
 
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -31,7 +32,7 @@
         </activity>
         <activity android:name=".BackgroundTest" />
         <activity android:name=".Lumen" />
-        <activity android:name=".Random"></activity>
+        <activity android:name=".Rando"></activity>
     </application>
 
 </manifest>
