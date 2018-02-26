@@ -63,6 +63,15 @@ public class Menu extends AppCompatActivity {
                 startActivity(new Intent(Menu.this, RGB.class));
             }
         });
+
+        Button btn7 = findViewById(R.id.nthsort);
+
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, nthsort.class));
+            }
+        });
     }
 
 }

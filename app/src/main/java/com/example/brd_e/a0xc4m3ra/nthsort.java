@@ -1,17 +1,19 @@
 package com.example.brd_e.a0xc4m3ra;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import java.util.Arrays;
 import java.util.Random;
 
-public class NthPixel extends AppCompatActivity {
+public class nthsort extends AppCompatActivity {
     private static final int CAMERA_REQUEST = 1888;
     private ImageView imageView;
     private EditText text;
@@ -20,7 +22,7 @@ public class NthPixel extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nth_pixel);
+        setContentView(R.layout.activity_nthsort);
         this.imageView = this.findViewById(R.id.imageView1);
         text = findViewById(R.id.nth);
         Button photoButton = this.findViewById(R.id.button1);
@@ -59,25 +61,10 @@ public class NthPixel extends AppCompatActivity {
         {
             offsetArray[index++] = pixels[i];
         }
-        offsetArray = randomizer(offsetArray);
+        Arrays.sort(offsetArray);
         for(int i = 0; i < pixels.length-offset;i += offset)
         {
             pixels[i] = offsetArray[--index];
-        }
-        return pixels;
-    }
-    public int[] randomizer(int[] pixels)
-    {
-        int length = pixels.length;
-        int color;
-        int index;
-        for(int p = 0; p < length; p++)
-        {
-            color = pixels[p];
-            index = rand.nextInt(length);
-            pixels[p] = pixels[index];
-            pixels[index] = color;
-
         }
         return pixels;
     }

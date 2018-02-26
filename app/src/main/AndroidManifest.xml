@@ -39,7 +39,8 @@
         <activity android:name=".Rando" />
         <activity android:name=".NthPixel" />
         <activity android:name=".Generate" />
-        <activity android:name=".RGB"></activity>
+        <activity android:name=".RGB" />
+        <activity android:name=".nthsort"></activity>
     </application>
 
 </manifest>
